@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Wedding Invitation Siska & Rio</title>
+
+        <link rel="shortcut icon" href="images/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400..700&family=Young+Serif&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="css/normalize.css" />
+        <link rel="stylesheet" href="css/simplebar.min.css" />
+        <link rel="stylesheet" href="css/sal.css" />
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+    <body class="invite">
+        <audio src="audio/glue-song.mp3" class="bgm" autoplay></audio>
+        <div class="foreground"></div>
+        <div class="audio-control">
+            <img src="images/btn-play.png" alt="" class="icon-play hidden" />
+            <img src="images/btn-pause.png" alt="" class="icon-pause" />
+        </div>
+
+        <div class="container">
+            <div class="main">
+                <section>
+                    <div class="opening-text" data-sal="slide-down" data-sal-anchor-placement="center-center" data-sal-duration="700">We would like to invite you to celebrate our wedding</div>
+                    <div class="person bride">
+                        <div class="person-wrap" data-sal="slide-down" data-sal-anchor-placement="center-center" data-sal-duration="700" data-sal-delay="200">
+                            <img src="images/img-siska.png" alt="" />
+                            <div class="frame-name">
+                                <img src="images/frame-nama-1.png" alt="" />
+                                <p>Fransiska Laksmi Diniati</p>
+                            </div>
+                        </div>
+                        <p class="font-lora person-parent" data-sal="slide-down" data-sal-anchor-placement="center-center" data-sal-duration="700" data-sal-delay="600">
+                            the beloved child of Mr. Yohanes Mey Intarto <br />
+                            and Mrs. Aquelina Yunaeni Mariati
+                        </p>
+                        <div class="floating-asset asset-bride-1 float-1" data-sal="slide-down" data-sal-anchor-placement="center-center" data-sal-duration="700" data-sal-delay="800">
+                            <img src="images/ayam-geprek.png" alt="" />
+                        </div>
+                        <div class="floating-asset asset-bride-2 float-2" data-sal="slide-down" data-sal-anchor-placement="center-center" data-sal-duration="700" data-sal-delay="900">
+                            <img src="images/docmart.png" alt="" />
+                        </div>
+                        <div class="floating-asset asset-bride-3 float-2 delay" data-sal="slide-down" data-sal-anchor-placement="center-center" data-sal-duration="700" data-sal-delay="1000">
+                            <img src="images/es-krim.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="and" data-sal="slide-down" data-sal-anchor-placement="center-center" data-sal-duration="700">&</div>
+                    <div class="person groom">
+                        <div class="person-wrap" data-sal="slide-down" data-sal-anchor-placement="center-center" data-sal-duration="700">
+                            <img src="images/img-rio.png" alt="" />
+                            <div class="frame-name">
+                                <img src="images/frame-nama-2.png" alt="" />
+                                <p>Satriyo Priyo Adi</p>
+                            </div>
+                        </div>
+                        <p class="font-lora person-parent" data-sal="slide-down" data-sal-anchor-placement="center-center" data-sal-duration="700" data-sal-delay="200">
+                            the beloved child of the late Raymundus Prihadi <br />
+                            Widodo and Mrs. Maria Assumpta Budi Prawati
+                        </p>
+                        <div class="floating-asset asset-groom-1 float-2" data-sal="slide-down" data-sal-anchor-placement="center-center" data-sal-duration="700" data-sal-delay="300">
+                            <img src="images/wristband.png" alt="" />
+                        </div>
+                        <div class="floating-asset asset-groom-2 float-1" data-sal="slide-down" data-sal-anchor-placement="center-center" data-sal-duration="700" data-sal-delay="400">
+                            <img src="images/ekubo-1.png" alt="" />
+                        </div>
+                        <div class="floating-asset asset-groom-3 float-1 delay" data-sal="slide-down" data-sal-anchor-placement="center-center" data-sal-duration="700" data-sal-delay="500">
+                            <img src="images/tehbotol.png" alt="" />
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="frame-date" data-sal="slide-down" data-sal-anchor-placement="center-center" data-sal-duration="700">
+                        <div class="date-content">
+                            <img src="images/frame-tanggal.png" alt="" />
+                            <div class="date-title">Save The Date</div>
+                            <div class="date-detail">
+                                <div>Saturday</div>
+                                <div>26/04/2025</div>
+                            </div>
+                            <div class="date-countdown">
+                                <div class="date-countdown-item">
+                                    <div class="date-countdown-number" id="days">00</div>
+                                    <span>Days</span>
+                                </div>
+                                <div class="date-countdown-item">
+                                    <div class="date-countdown-number" id="hours">00</div>
+                                    <span>Hours</span>
+                                </div>
+                                <div class="date-countdown-item">
+                                    <div class="date-countdown-number" id="minutes">00</div>
+                                    <span>Minutes</span>
+                                </div>
+                                <div class="date-countdown-item hidden">
+                                    <div class="date-countdown-number" id="seconds">00</div>
+                                    <span>Minutes</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="floating-asset asset-date-1 float-1" data-sal="slide-down" data-sal-anchor-placement="center-center" data-sal-duration="700" data-sal-delay="200">
+                            <img src="images/bunga-1.png" alt="" />
+                        </div>
+                        <div class="floating-asset asset-date-2 float-2" data-sal="slide-down" data-sal-anchor-placement="center-center" data-sal-duration="700" data-sal-delay="300">
+                            <img src="images/ekubo-2.png" alt="" />
+                        </div>
+                        <div class="floating-asset asset-date-3 float-2 delay" data-sal="slide-down" data-sal-anchor-placement="center-center" data-sal-duration="700" data-sal-delay="400">
+                            <img src="images/jam-pasir.png" alt="" />
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="holy-matrimony-wrap">
+                        <div class="frame-holy-matrimony" data-sal="slide-down" data-sal-anchor-placement="center-center" data-sal-duration="700">
+                            <img src="images/frame-kucing.png" alt="" />
+                            <div class="holy-matrimony-title">Holy Matrimony</div>
+                        </div>
+                        <div class="detail-holy-matrimony" data-sal="slide-down" data-sal-anchor-placement="center-center" data-sal-duration="700" data-sal-delay="200">
+                            <img src="images/frame-besar-1.png" alt="" />
+                            <div class="holy-matrimony-text">
+                                <div class="holy-matrimony-date">Saturday, 26/04/2025</div>
+                                <div class="holy-matrimony-time font-lora">09.00</div>
+                                <div class="holy-matrimony-place">
+                                    Gereja Hati Santa Perawan Maria <br />
+                                    Tak Bercela, Kumetiran
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn" data-sal="slide-down" data-sal-anchor-placement="center-center" data-sal-duration="700" data-sal-delay="500">
+                            <img src="images/frame-sedang-1.png" alt="" />
+                            <span>Location Maps</span>
+                            <a href="https://maps.app.goo.gl/NM14ZBVaP2MWdpGb8?g_st=iw" target="_blank" rel="noopener noreferrer"></a>
+                        </div>
+                        <div class="floating-asset holy-matrimony-asset-1 float-3" data-sal="slide-down" data-sal-anchor-placement="center-center" data-sal-duration="700" data-sal-delay="700">
+                            <img src="images/awan-1.png" alt="" />
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="reception-wrap">
+                        <div class="frame-reception" data-sal="slide-down" data-sal-anchor-placement="center-center" data-sal-duration="700">
+                            <img src="images/frame-judul-1.png" alt="" />
+                            <div class="reception-title">Reception</div>
+                        </div>
+                        <div class="detail-reception" data-sal="slide-down" data-sal-anchor-placement="center-center" data-sal-duration="700" data-sal-delay="200">
+                            <img src="images/frame-besar-2.png" alt="" />
+                            <div class="reception-text">
+                                <div class="reception-date">Saturday, 26/04/2025</div>
+                                <div class="reception-time font-lora">16.00 - 18.00</div>
+                                <div class="reception-place">Omah Pakem</div>
+                            </div>
+                        </div>
+                        <div class="btn reception-btn" data-sal="slide-down" data-sal-anchor-placement="center-center" data-sal-duration="700" data-sal-delay="500">
+                            <img src="images/frame-sedang-1.png" alt="" />
+                            <span>Location Maps</span>
+                            <a href="https://maps.app.goo.gl/XGTuNy5iHicJvbqp9?g_st=iw" target="_blank" rel="noopener noreferrer"></a>
+                        </div>
+                        <div class="floating-asset reception-asset-1 float-1" data-sal="slide-down" data-sal-anchor-placement="center-center" data-sal-duration="700" data-sal-delay="700">
+                            <img src="images/ekubo-3.png" alt="" />
+                        </div>
+                        <div class="floating-asset reception-asset-2 float-4" data-sal="slide-down" data-sal-anchor-placement="center-center" data-sal-duration="700" data-sal-delay="800">
+                            <img src="images/awan-2.png" alt="" />
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="map-wrap">
+                        <div class="map-main" data-sal="slide-down" data-sal-anchor-placement="center-center" data-sal-duration="700">
+                            <div class="map-content">
+                                <img src="images/peta.png" alt="" />
+                                <div class="map-title">
+                                    Reception <br />
+                                    Venue Map
+                                </div>
+                            </div>
+                        </div>
+                        <div class="floating-asset map-asset-1 float-3" data-sal="slide-down" data-sal-anchor-placement="center-center" data-sal-duration="700" data-sal-delay="200">
+                            <img src="images/awan-3.png" alt="" />
+                        </div>
+                        <div class="floating-asset map-asset-2 float-2" data-sal="slide-down" data-sal-anchor-placement="center-center" data-sal-duration="700" data-sal-delay="300">
+                            <img src="images/bunga-2.png" alt="" />
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="dresscode-wrap">
+                        <div class="frame-dresscode" data-sal="slide-down" data-sal-anchor-placement="center-center" data-sal-duration="700">
+                            <img src="images/frame-sedang-2.png" alt="" />
+                            <div class="dresscode-title">Dresscode</div>
+                        </div>
+                        <div class="dresscode-main" data-sal="slide-down" data-sal-anchor-placement="center-center" data-sal-duration="700" data-sal-delay="200">
+                            <img src="images/dresscode.png" alt="" />
+                        </div>
+                        <div class="detail-dresscode" data-sal="slide-down" data-sal-anchor-placement="center-center" data-sal-duration="700" data-sal-delay="400">
+                            <img src="images/frame-besar-3.png" alt="" />
+                            <div class="dresscode-text font-lora">We'd love to see you in shades of green or brown</div>
+                        </div>
+                        <div class="floating-asset dresscode-asset-1 float-2" data-sal="slide-down" data-sal-anchor-placement="center-center" data-sal-duration="700" data-sal-delay="700">
+                            <img src="images/ekubo-4.png" alt="" />
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="rsvp-wrap">
+                        <div class="frame-rsvp" data-sal="slide-down" data-sal-anchor-placement="center-center" data-sal-duration="700">
+                            <img src="images/rsvp.png" alt="" />
+                            <div class="rsvp-title">RSVP</div>
+                        </div>
+                        <div class="detail-rsvp" data-sal="slide-down" data-sal-anchor-placement="center-center" data-sal-duration="700" data-sal-delay="200">
+                            <img src="images/frame-sedang-4.png" alt="" />
+                            <div class="rsvp-text font-lora">We would be delighted to celebrate our wedding with you</div>
+                        </div>
+                        <form action="javascript:void(0)">
+                            <div class="form-input-wrap" data-sal="slide-down" data-sal-anchor-placement="center-center" data-sal-duration="700" data-sal-delay="400">
+                                <label for="rsvp-name">Name</label>
+                                <div class="form-input-bg">
+                                    <img src="images/frame-form-1.png" alt="" />
+                                    <div class="form-input-item">
+                                        <input type="text" id="rsvp-name" name="rsvp_name" placeholder="Please enter your name here" class="form-input" required />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-input-wrap" data-sal="slide-down" data-sal-anchor-placement="center-center" data-sal-duration="700" data-sal-delay="600">
+                                <label for="attendance">Will attend</label>
+                                <div class="form-input-bg">
+                                    <img src="images/frame-form-2.png" alt="" />
+                                    <div class="form-input-item">
+                                        <select id="attendance" name="attendance" class="form-input" required>
+                                            <option value="ceremony">Holy Matrimony</option>
+                                            <option value="reception">Reception</option>
+                                            <option value="both">Both</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-input-wrap" data-sal="slide-down" data-sal-anchor-placement="center-center" data-sal-duration="700" data-sal-delay="800">
+                                <label for="attendees">Attendee(s)</label>
+                                <div class="form-input-bg">
+                                    <img src="images/frame-form-1.png" alt="" />
+                                    <div class="form-input-item">
+                                        <select id="attendees" name="attendees" class="form-input" required>
+                                            <option value="1">1 person</option>
+                                            <option value="2">2 persons</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-input-wrap" data-sal="slide-down" data-sal-anchor-placement="center-center" data-sal-duration="700" data-sal-delay="1000">
+                                <div class="form-input-bg form-input-btn btn">
+                                    <img src="images/frame-sedang-5.png" alt="" />
+                                    <button type="submit" class="rsvp-confirm">Confirm</button>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="popup-wrap rsvp-popup hidden">
+                            <div class="popup-back"></div>
+                            <div class="popup">
+                                <img src="images/frame-sedang-4.png" alt="" />
+                                <div class="popup-message">Thank you for your confirmation!</div>
+                                <div class="popup-close">
+                                    <img src="images/btn-close.png" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="wishes-wrap">
+                        <div class="frame-wishes" data-sal="slide-down" data-sal-anchor-placement="center-center" data-sal-duration="700">
+                            <img src="images/frame-judul-2.png" alt="" />
+                            <div class="wishes-title">Wishes</div>
+                        </div>
+                        <div class="detail-wishes" data-sal="slide-down" data-sal-anchor-placement="center-center" data-sal-duration="700" data-sal-delay="200">
+                            <img src="images/frame-sedang-6.png" alt="" />
+                            <div class="wishes-text font-lora">Your kind wishes & presence are the best gift we could ask for</div>
+                        </div>
+                        <div class="wishes-form">
+                            <form action="javascript:void(0)" id="form-wishes">
+                                <div class="wishes-area-wrap" data-sal="slide-down" data-sal-anchor-placement="center-center" data-sal-duration="700" data-sal-delay="400">
+                                    <img src="images/frame-besar-4.png" alt="" />
+                                    <div class="wishes-area">
+                                        <div class="form-input-wrap">
+                                            <label for="wishes-name">Name</label>
+                                            <div class="form-input-bg">
+                                                <img src="images/wishes-box-1.png" alt="" />
+                                                <div class="form-input-item">
+                                                    <input type="text" id="wishes-name" name="wishes_name" placeholder="Please enter your name here" class="form-input font-lora" required />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-input-wrap">
+                                            <label for="wishes-message">Message</label>
+                                            <div class="form-input-bg">
+                                                <img src="images/wishes-box-2.png" alt="" />
+                                                <div class="form-input-item">
+                                                    <textarea name="wishes-message" id="wishes-message" placeholder="Write your wishes here" class="form-input font-lora" rows="8" minlength="50" maxlength="200"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-input-wrap" data-sal="slide-down" data-sal-anchor-placement="center-center" data-sal-duration="700" data-sal-delay="600">
+                                    <div class="form-input-bg form-input-btn btn">
+                                        <img src="images/frame-sedang-7.png" alt="" />
+                                        <button type="submit" id="wishes-send">Send</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="popup-wrap wishes-popup-error hidden">
+                                <div class="popup-back"></div>
+                                <div class="popup">
+                                    <img src="images/frame-sedang-4.png" alt="" />
+                                    <div class="popup-message">Your message should contain minimum 50 characters!</div>
+                                    <div class="popup-close">
+                                        <img src="images/btn-close.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="floating-asset wishes-asset-1 float-1" data-sal="slide-down" data-sal-anchor-placement="center-center" data-sal-duration="700" data-sal-delay="700">
+                            <img src="images/bunga-3.png" alt="" />
+                        </div>
+                        <div class="floating-asset wishes-asset-2 float-3" data-sal="slide-down" data-sal-anchor-placement="center-center">
+                            <img src="images/awan-4.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="wishes-list-wrap" data-sal="slide-down" data-sal-anchor-placement="center-center" data-sal-duration="700" data-sal-delay="900">
+                        <img src="images/frame-besar-5.png" alt="" />
+                        <div class="wishes-all-wrap">
+                            <div class="wishes-all">
+                                <div class="wishes-list" data-simplebar data-simplebar-auto-hide="false">
+                                    <div class="wishes-all-list">
+                                        <div class="wish">
+                                            <div class="wish-name">rinso dan daia:</div>
+                                            <div class="wish-message">miaw miaw miaw miaw miaw miaw miaw miaw miaw miaw miaw miaw miaw miaw miaw miaw miaw miaw miaw miaw miaw miaw miaaaaw</div>
+                                        </div>
+                                        <div class="wish">
+                                            <div class="wish-name">mandarin oranges:</div>
+                                            <div class="wish-message">omg omg omg congratulations siska dan rio atas penikahannyaa!</div>
+                                        </div>
+                                        <div class="wish">
+                                            <div class="wish-name">Very Berry Strawberry:</div>
+                                            <div class="wish-message">The day has finally come! Congrats Rio and Siska, so happy for both of you <3</div>
+                                        </div>
+                                        <div class="wish">
+                                            <div class="wish-name">wonungie:</div>
+                                            <div class="wish-message">selamat ya guys, udah rsvp untuk dua-duanya nih gue</div>
+                                        </div>
+                                        <div class="wish">
+                                            <div class="wish-name">Sasa:</div>
+                                            <div class="wish-message">Halo Siska dan Rio, selamat ya atas penikahan kalian! Semoga berbahagia dan selalu bersama sampai maut memisahkan dan selalu menjadi pasangan yang ghibli abis</div>
+                                        </div>
+                                        <div class="wish">
+                                            <div class="wish-name">Test:</div>
+                                            <div class="wish-message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia tempora rem sint obcaecati dicta cupiditate non iure nisi reiciendis suscipit.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="floating-asset wishes-asset-3 float-2">
+                            <img src="images/surat.png" alt="" />
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <script src="js/simplebar.min.js"></script>
+        <script src="js/sal.js"></script>
+        <script src="js/script.js"></script>
+        <script>
+            sal({
+                once: true,
+                root: null,
+            });
+        </script>
+    </body>
+</html>

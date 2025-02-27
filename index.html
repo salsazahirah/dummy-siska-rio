@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Wedding Invitation Siska & Rio</title>
+
+        <link rel="shortcut icon" href="images/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400..700&family=Young+Serif&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="css/normalize.css" />
+        <link rel="stylesheet" href="css/sal.css" />
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+    <body class="cover">
+        <div class="cover-img"></div>
+        <div class="container">
+            <div class="btn btn-open" data-sal="slide-down" data-sal-duration="700">
+                <img src="images/frame-sedang-3.png" alt="" />
+                <span>Open Invitation</span>
+                <a href="invite.html"> </a>
+            </div>
+        </div>
+
+        <script src="js/sal.js"></script>
+        <script>
+            sal({
+                once: true,
+                root: null,
+            });
+
+            function goToInvite() {
+                sessionStorage.setItem("playAudio", "true");
+                window.location.href = "invite.html";
+            }
+        </script>
+    </body>
+</html>

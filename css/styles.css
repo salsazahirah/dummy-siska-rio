@@ -1,0 +1,1090 @@
+:root {
+    --brown-1: #785e31;
+    --brown-2: #62491e;
+    --lora: "Lora", serif;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Young Serif", serif;
+}
+
+html {
+    height: 100%;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    background-image: url(../images/arrow-down.png);
+    background-repeat: no-repeat;
+    background-size: 14px;
+    background-position: right 4px center;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+textarea {
+    resize: none;
+    outline: none;
+}
+
+input {
+    outline: none;
+}
+
+img {
+    width: 100%;
+}
+
+div {
+    color: var(--brown-1);
+    line-height: 1.3;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+body {
+    max-height: 100%;
+    background-color: #fff;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+section {
+    position: relative;
+}
+
+.font-lora {
+    font-family: var(--lora);
+}
+
+.container {
+    width: 100%;
+    max-width: 650px;
+    margin: auto;
+    padding: 0 20px;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.cover {
+    height: 100%;
+    background-image: url(../images/bg-texture.png);
+}
+
+.cover-img {
+    width: 100%;
+    height: 65%;
+    min-height: 400px;
+    background-image: url(../images/cover-m.png);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.invite {
+    background-image: url(../images/bg.png);
+}
+
+.main {
+    height: 100%;
+    padding-top: 40px;
+    padding-bottom: 140px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 300px;
+    margin: auto;
+}
+
+.foreground {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 120px;
+    background-image: url(../images/foreground.png);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 3;
+}
+
+.audio-control {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    z-index: 4;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.btn {
+    position: relative;
+    width: 200px;
+    margin: auto;
+    cursor: pointer;
+}
+
+.btn span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 77%;
+    color: var(--brown-1);
+}
+
+.btn a {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.btn-open {
+    margin-top: 30px;
+}
+
+.opening-text {
+    font-size: 20px;
+    margin-bottom: 32px;
+}
+
+.person {
+    position: relative;
+    width: 270px;
+    margin: auto;
+}
+
+.person-wrap {
+    margin: auto;
+}
+
+.person-wrap > img {
+    width: 80%;
+}
+
+.bride .person-wrap > img {
+    margin-left: -15px;
+}
+
+.groom .person-wrap > img {
+    margin-right: -15px;
+}
+
+.frame-name {
+    position: relative;
+    margin-top: -40px;
+}
+
+.frame-name p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.person-parent {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--brown-2);
+    line-height: 1.3;
+    margin-top: 10px;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+.floating-asset {
+    position: absolute;
+    width: 100px;
+}
+
+.asset-bride-1 {
+    top: 0;
+    left: -30px;
+}
+
+.asset-bride-2 {
+    right: -35px;
+    top: 75px;
+}
+
+.asset-bride-3 {
+    bottom: 50px;
+    left: -40px;
+}
+
+.asset-groom-1 {
+    top: 10px;
+    right: -20px;
+}
+
+.asset-groom-2 {
+    left: -30px;
+    top: 50px;
+    width: 120px;
+}
+
+.asset-groom-3 {
+    bottom: 60px;
+    right: -60px;
+    width: 120px;
+}
+
+.and {
+    font-size: 48px;
+    margin: 32px auto;
+}
+
+.frame-date {
+    position: relative;
+    width: 250px;
+    margin: auto;
+}
+
+.date-content {
+    transform: rotate(-3deg);
+}
+
+.date-title {
+    position: absolute;
+    font-size: 28px;
+    top: 25px;
+    left: 0;
+    right: 0;
+}
+
+.date-detail {
+    position: absolute;
+    top: 110px;
+    left: 0;
+    right: 0;
+    font-size: 32px;
+}
+
+.date-countdown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 42px;
+    left: 0;
+    right: 0;
+    gap: 20px;
+}
+
+.date-countdown-item {
+    width: 50px;
+}
+
+.date-countdown-number {
+    font-size: 38px;
+    font-family: var(--lora);
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.date-countdown-item span {
+    font-size: 12px;
+}
+
+.asset-date-1 {
+    width: 70px;
+    top: 40px;
+    left: -40px;
+}
+
+.asset-date-2 {
+    width: 80px;
+    top: 60px;
+    right: -60px;
+}
+
+.asset-date-3 {
+    width: 60px;
+    bottom: -30px;
+    left: -40px;
+}
+
+.frame-holy-matrimony,
+.frame-reception,
+.frame-dresscode,
+.frame-rsvp,
+.frame-wishes {
+    position: relative;
+}
+
+.holy-matrimony-title,
+.reception-title,
+.dresscode-title,
+.wishes-title {
+    position: absolute;
+    height: 65px;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: var(--brown-2);
+}
+
+.detail-holy-matrimony,
+.detail-reception,
+.detail-rsvp,
+.detail-wishes {
+    position: relative;
+    margin: 10px auto;
+}
+
+.holy-matrimony-text,
+.reception-text,
+.rsvp-text,
+.wishes-text {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    bottom: 20px;
+    right: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+}
+
+.holy-matrimony-time,
+.reception-time {
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.holy-matrimony-place,
+.reception-place {
+    font-size: 14px;
+}
+
+.holy-matrimony-asset-1 {
+    width: 200px;
+    top: 160px;
+    left: -110px;
+}
+
+.reception-title {
+    top: 0;
+    height: auto;
+}
+
+.reception-text {
+    top: 14px;
+}
+
+.reception-btn > img {
+    transform: scaleX(-1);
+}
+
+.reception-asset-1 {
+    top: 20px;
+    left: -30px;
+    width: 90px;
+}
+
+.reception-asset-2 {
+    width: 200px;
+    right: -120px;
+    top: 120px;
+}
+
+.map-wrap {
+    position: relative;
+    width: 280px;
+    margin: auto;
+}
+
+.map-content {
+    transform: rotate(4deg);
+}
+
+.map-title {
+    position: absolute;
+    top: 43px;
+    left: 0;
+    right: 0;
+    font-size: 24px;
+}
+
+.map-asset-1 {
+    width: 200px;
+    position: absolute;
+    bottom: 100px;
+    left: -120px;
+}
+
+.map-asset-2 {
+    top: 270px;
+    right: -25px;
+    width: 90px;
+}
+
+.dresscode-wrap {
+    width: 280px;
+    margin: auto;
+}
+
+.dresscode-main {
+    margin-top: 10px;
+}
+
+.dresscode-main > img {
+    margin-left: 20px;
+}
+
+.detail-dresscode {
+    margin-top: -40px;
+    position: relative;
+}
+
+.dresscode-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 36px;
+    font-weight: 600;
+}
+
+.dresscode-asset-1 {
+    top: 10px;
+    left: -20px;
+    width: 110px;
+}
+
+.frame-rsvp {
+    width: 250px;
+    margin: auto;
+}
+
+.rsvp-title {
+    position: absolute;
+    top: 8px;
+    right: 42px;
+    font-size: 40px;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    transform: rotate(9deg);
+}
+
+.detail-rsvp {
+    margin-top: -25px;
+}
+
+.rsvp-text,
+.wishes-text {
+    /* font-size: 14px; */
+    font-weight: 600;
+    padding-left: 20px;
+    padding-right: 20px;
+    top: 2px;
+    bottom: 7px;
+}
+
+.form-input-wrap {
+    margin-top: 15px;
+}
+
+.form-input-bg {
+    position: relative;
+    margin-top: 5px;
+}
+
+.form-input-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 8px;
+    padding: 10px 20px;
+}
+
+.form-input-item input,
+.form-input-item select,
+.form-input-item textarea {
+    width: 100%;
+    height: 100%;
+    padding: 8px;
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    color: var(--brown-1);
+}
+
+.form-input-btn button {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    right: 4px;
+    bottom: 20px;
+    background: transparent;
+    border: none;
+    color: var(--brown-1);
+}
+
+.detail-wishes {
+    z-index: 1;
+}
+
+.wishes-title {
+    bottom: 10px;
+}
+
+.wishes-area-wrap {
+    position: relative;
+}
+
+.wishes-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 15px 25px;
+}
+
+.wishes-form .form-input-wrap {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.wishes-form .form-input-wrap label {
+    width: 58px;
+    flex-shrink: 0;
+    text-align: left;
+    line-height: 30px;
+}
+
+.wishes-form .form-input-item {
+    bottom: 0;
+    padding: 0;
+}
+
+.wishes-form .form-input-bg {
+    margin-top: 0;
+}
+
+.wishes-asset-1 {
+    width: 70px;
+    top: -15px;
+    right: -10px;
+}
+
+.wishes-asset-2 {
+    width: 200px;
+    top: 260px;
+    left: -120px;
+}
+
+.wishes-asset-3 {
+    right: -50px;
+    top: 250px;
+    width: 80px;
+    z-index: 2;
+}
+
+.wishes-list-wrap {
+    position: relative;
+    margin-top: 20px;
+}
+
+.wishes-all {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 10px;
+    right: 0;
+    padding: 20px 20px 20px 25px;
+}
+
+.wishes-list {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    padding-right: 15px;
+    display: flex;
+}
+
+.wish {
+    background-image: url(../images/wishes-box-2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: left;
+    font-size: 13px;
+    height: 142px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.wish:last-child {
+    margin-bottom: 0;
+}
+
+.wish-name,
+.wish-message {
+    font-family: var(--lora);
+    line-height: 1.3;
+    overflow-wrap: break-word;
+}
+
+.wish-name {
+    font-weight: 700;
+    margin-bottom: 3px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.simplebar-scrollbar::before {
+    width: 6px !important; /* Adjust the width as needed */
+    background-color: var(--brown-1); /* Thumb color */
+    border-radius: 4px;
+    margin: 0; /* Remove extra spacing */
+}
+
+.simplebar-track {
+    background-color: #fdf5e8;
+    border-radius: 4px;
+    width: 10px !important; /* Same as scrollbar width */
+    padding: 0 !important; /* Remove any extra padding */
+}
+
+.simplebar-scrollbar {
+    right: 0 !important; /* Align scrollbar flush to the track */
+}
+
+.float-1 {
+    animation: float-1 3s ease-in-out infinite;
+}
+
+.float-2 {
+    animation: float-2 3s ease-in-out infinite;
+}
+
+.float-3 {
+    animation: float-3 3s ease-in-out infinite;
+}
+
+.float-4 {
+    animation: float-4 3s ease-in-out infinite;
+}
+
+.delay {
+    animation-delay: 500ms;
+}
+
+.popup-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9;
+}
+
+.popup-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #785e3120;
+}
+
+.popup {
+    position: relative;
+    width: 270px;
+}
+
+.popup-message {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.popup-close {
+    position: absolute;
+    width: 40px;
+    padding: 5px;
+    top: -15px;
+    right: -15px;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 430px) {
+    .main {
+        width: 360px;
+        gap: 70px;
+        padding-bottom: 160px;
+    }
+
+    .foreground {
+        height: 140px;
+    }
+
+    .btn {
+        width: 250px;
+    }
+
+    .btn span {
+        font-size: 20px;
+    }
+
+    .person {
+        width: 320px;
+    }
+
+    .frame-name {
+        margin-top: -50px;
+    }
+
+    .frame-name p {
+        font-size: 20px;
+    }
+
+    .person-parent {
+        font-size: 16px;
+        margin-left: -30px;
+        margin-right: -30px;
+    }
+
+    .floating-asset {
+        width: 120px;
+    }
+
+    .asset-bride-1 {
+        left: -40px;
+    }
+
+    .asset-bride-3 {
+        left: -50px;
+        bottom: 70px;
+    }
+
+    .asset-groom-2 {
+        width: 140px;
+    }
+
+    .asset-groom-3 {
+        width: 140px;
+        right: -70px;
+    }
+
+    .opening-text {
+        font-size: 24px;
+    }
+
+    .frame-date {
+        width: 320px;
+    }
+
+    .date-title {
+        font-size: 34px;
+        top: 36px;
+    }
+
+    .date-detail {
+        top: 140px;
+        font-size: 42px;
+    }
+
+    .date-countdown {
+        bottom: 55px;
+        gap: 20px;
+    }
+
+    .date-countdown-item {
+        width: 72px;
+    }
+
+    .date-countdown-number {
+        font-size: 46px;
+        margin-bottom: 15px;
+    }
+
+    .date-countdown-item span {
+        font-size: 16px;
+    }
+
+    .asset-date-1 {
+        width: 100px;
+        top: 70px;
+        left: -50px;
+    }
+
+    .asset-date-2 {
+        width: 100px;
+        right: -65px;
+    }
+
+    .asset-date-3 {
+        width: 80px;
+        bottom: -50px;
+        left: -50px;
+    }
+
+    .holy-matrimony-title,
+    .reception-title,
+    .dresscode-title,
+    .wishes-title {
+        height: 85px;
+        font-size: 24px;
+    }
+
+    .holy-matrimony-text,
+    .reception-text,
+    .rsvp-text,
+    .wishes-text {
+        font-size: 20px;
+    }
+
+    .holy-matrimony-time,
+    .reception-time {
+        font-size: 30px;
+    }
+
+    .holy-matrimony-place,
+    .reception-place {
+        font-size: 18px;
+    }
+
+    .holy-matrimony-asset-1 {
+        width: 230px;
+        top: 190px;
+    }
+
+    .reception-asset-1 {
+        width: 110px;
+        left: -40px;
+    }
+
+    .reception-asset-2 {
+        width: 200px;
+        top: 150px;
+    }
+
+    .map-wrap {
+        width: 330px;
+    }
+
+    .map-title {
+        font-size: 30px;
+    }
+
+    .map-asset-1 {
+        width: 220px;
+        bottom: 120px;
+        left: -130px;
+    }
+
+    .map-asset-2 {
+        width: 100px;
+        top: 310px;
+    }
+
+    .dresscode-wrap {
+        width: 100%;
+    }
+
+    .dresscode-text {
+        font-size: 22px;
+    }
+
+    .dresscode-asset-1 {
+        width: 130px;
+        left: -30px;
+    }
+
+    .frame-rsvp {
+        width: 340px;
+    }
+
+    .rsvp-title {
+        top: 15px;
+        right: 52px;
+        font-size: 56px;
+    }
+
+    .form-input-wrap label {
+        font-size: 18px;
+    }
+
+    .form-input-item input,
+    .form-input-item select,
+    .form-input-item textarea {
+        font-size: 18px;
+    }
+
+    .form-input-btn button {
+        font-size: 20px;
+    }
+
+    .wishes-area .form-input-item input {
+        height: 90%;
+    }
+
+    .wish {
+        height: 178px;
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    .wishes-asset-1 {
+        width: 90px;
+        top: -30px;
+        right: 0px;
+    }
+
+    .wishes-asset-2 {
+        width: 220px;
+        top: 300px;
+    }
+
+    .wishes-asset-3 {
+        width: 100px;
+        right: -70px;
+    }
+
+    .popup {
+        width: 360px;
+    }
+
+    .popup-message {
+        font-size: 18px;
+    }
+
+    .popup-close {
+        width: 50px;
+        top: -20px;
+        right: -20px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .cover-img {
+        background-image: url(../images/cover-d.png);
+    }
+
+    .btn {
+        width: 275px;
+        font-size: 20px;
+    }
+
+    .foreground {
+        height: 220px;
+        background-size: cover;
+        background-position: top center;
+    }
+
+    .main {
+        padding-bottom: 240px;
+    }
+}
+
+@keyframes float-1 {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(15px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes float-2 {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes float-3 {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-15px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes float-4 {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(15px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
