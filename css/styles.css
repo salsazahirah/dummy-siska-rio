@@ -99,7 +99,15 @@ section {
     background-repeat: no-repeat;
 }
 
-.invite {
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     background-image: url(../images/bg.png);
 }
 
