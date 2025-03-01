@@ -89,10 +89,20 @@ wishesSend.addEventListener("click", function (e) {
     }
 });
 
+const rsvpAttendance = document.querySelector("#attendance");
+const rsvpFormAttendees = document.querySelector(".form-attendees");
 const rsvpConfirm = document.querySelector(".rsvp-confirm");
 const rsvpPopup = document.querySelector(".rsvp-popup");
 const rsvpPopupMessage = document.querySelector(".rsvp-popup .popup-message");
 const rsvpName = document.querySelector("#rsvp-name");
+
+rsvpAttendance.addEventListener("change", function () {
+    if (this.value == "absent") {
+        rsvpFormAttendees.classList.add("hidden");
+    } else {
+        rsvpFormAttendees.classList.remove("hidden");
+    }
+});
 
 rsvpConfirm.addEventListener("click", function (e) {
     if (rsvpName.value == "") {
