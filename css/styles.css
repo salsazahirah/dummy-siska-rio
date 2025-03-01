@@ -773,7 +773,7 @@ section {
     cursor: pointer;
 }
 
-@media only screen and (min-width: 430px) {
+/* @media only screen and (min-width: 430px) {
     .main {
         width: 360px;
         gap: 70px;
@@ -1020,7 +1020,7 @@ section {
         top: -20px;
         right: -20px;
     }
-}
+} */
 
 @media only screen and (min-width: 768px) {
     .container {
