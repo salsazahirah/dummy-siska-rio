@@ -1,13 +1,9 @@
 const bgm = document.querySelector(".bgm");
-window.onload = function () {
-    bgm.play().catch((error) => console.log("Autoplay prevented:", error));
-};
-
-window.onload = function () {
-    if (sessionStorage.getItem("playAudio") === "true") {
-        sessionStorage.removeItem("playAudio"); // Prevent replay on refresh
-    }
-};
+const body = document.querySelector("body");
+const btnOpen = document.querySelector(".btn-open");
+const cover = document.querySelector(".cover");
+const foreground = document.querySelector(".foreground");
+const invite = document.querySelector(".invite");
 
 document.addEventListener("visibilitychange", function () {
     if (document.hidden) {
@@ -15,6 +11,20 @@ document.addEventListener("visibilitychange", function () {
     } else {
         bgm.play().catch((error) => console.log("Autoplay blocked:", error)); // Resume when tab is active again
     }
+});
+
+btnOpen.addEventListener("click", () => {
+    cover.classList.add("open");
+    setTimeout(function () {
+        body.classList.remove("locked");
+        foreground.classList.remove("sliding");
+
+        setTimeout(function () {
+            invite.classList.remove("hidden");
+            bgm.play();
+            sal();
+        }, 500);
+    }, 1000);
 });
 
 const audioControl = document.querySelector(".audio-control");
