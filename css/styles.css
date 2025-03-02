@@ -28,6 +28,11 @@ select::-ms-expand {
     display: none;
 }
 
+input::placeholder,
+textarea::placeholder {
+    color: #868686;
+}
+
 textarea {
     resize: none;
     outline: none;
