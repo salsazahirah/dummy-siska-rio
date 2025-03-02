@@ -806,6 +806,18 @@ section {
     cursor: pointer;
 }
 
+.btn-link span::after {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-image: url(../images/arrow-down.png);
+    background-size: contain;
+    transform: rotate(30deg);
+    margin-left: 6px;
+    margin-top: 2px;
+}
+
 /* @media only screen and (min-width: 430px) {
     .main {
         width: 360px;
