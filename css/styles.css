@@ -606,6 +606,9 @@ section {
     color: var(--brown-1);
     font-weight: 400;
     font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .detail-wishes {
@@ -807,7 +810,8 @@ section {
     cursor: pointer;
 }
 
-.btn-link span::after {
+.btn-link span::after,
+.form-input-btn button::after {
     content: "";
     display: block;
     width: 15px;
